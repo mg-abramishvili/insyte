@@ -8,7 +8,7 @@
         </div>
 
         <div class="carousel-inner">
-            <div data-bs-interval="10000" class="carousel-item active">
+            <div data-bs-interval="5000" class="carousel-item active">
                 <!-- <div class="carousel-item-image" style="background-image: url(http://xn--80abehgs9c4c.xn--p1ai/img/slide-1.jpg);"></div> -->
                 <div class="carousel-item-video">
                     <video autoplay nocontrols muted loop>
@@ -20,12 +20,20 @@
                     <!-- <p>Текст первого слайда</p> -->
                 </div>
             </div>
-            <div data-bs-interval="10000" class="carousel-item">
-                <div class="carousel-item-image" style="background-image: url(https://static.tildacdn.com/tild6536-3661-4130-b634-346130663936/__.png);"></div>
+            <div data-bs-interval="5000" class="carousel-item">
+                <div class="carousel-item-image" style="background-image: url(/img/slide02.jpg);"></div>
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Заголовок второго слайда</h5>
-                    <p>Текст второго слайда</p>
-                    <a href="123" class="btn btn-standard">Подробнее</a>
+                    <h5>Впервые в Уфе!</h5>
+                    <p>Профессиональная проводная система домашней автоматизации!</p>
+                    <!-- <a href="123" class="btn btn-standard">Подробнее</a> -->
+                </div>
+            </div>
+            <div data-bs-interval="5000" class="carousel-item">
+                <div class="carousel-item-image" style="background-image: url(/img/slide03.jpg);"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Шоурум в Уфе!</h5>
+                    <p>Приходите к нам в гости, окунитесь в атмосферу Умного Дома!</p>
+                    <!-- <a href="123" class="btn btn-standard">Подробнее</a> -->
                 </div>
             </div>
         </div>
@@ -90,40 +98,25 @@
         <div class="container">
             <h5 class="title-head">Возможности</h5>
             <div class="main-features-slider" data-flickity='{ "pageDots": false }'>
-                <div class="main-features-item">
-                    <div class="row">
-                        <div class="col-6">
-                            <img src="/img/features/01.jpg" alt="Управление освещением">
-                        </div>
-                        <div class="col-6">
-                            <div class="main-features-item-desc">
-                                <h4>Управление освещением</h4>
-            
-                                <p>Самая популярная функция, позволяет управлять группами освещения, плавно включать и выключать свет, дистанционно задавать требуемый уровень яркости.</p>
-                                <p>При этом не нужно менять существующие осветительные приборы, умный дом будет использовать те, что уже стоят.</p>
-                                
-                                <a href="#" class="btn btn-standard me-2">Узнать стоимость</a>
-                                <a href="#" class="btn btn-outline-standard">Подробнее</a>
+                @foreach($features as $feature)
+                    <div class="main-features-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="{{ $feature->image }}" alt="Управление освещением">
+                            </div>
+                            <div class="col-6">
+                                <div class="main-features-item-desc">
+                                    <h4>{{ $feature->name }}</h4>
+                
+                                    {!! $feature->description !!}
+                                    
+                                    <a href="#" class="btn btn-standard me-2">Узнать стоимость</a>
+                                    <a href="#" class="btn btn-outline-standard">Подробнее</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="main-features-item">
-                    <div class="row">
-                        <div class="col-6">
-                            <img src="/img/features/01.jpg" alt="Управление освещением">
-                        </div>
-                        <div class="col-6">
-                            <div class="main-features-item-desc">
-                                <h4>Управление освещением</h4>
-            
-                                <p>Самая популярная функция, позволяет управлять группами освещения, плавно включать и выключать свет, дистанционно задавать требуемый уровень яркости. При этом не нужно менять существующие осветительные приборы, умный дом будет использовать те, что уже стоят.</p>
-                                
-                                <a href="#" class="btn btn-standard">Подробнее</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>

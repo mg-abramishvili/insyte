@@ -1,9 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Feature;
 
 Route::get('/', function () {
-    return view('home');
+    $features = Feature::all();
+    return view('home', compact('features'));
 });
 
 // ADMIN

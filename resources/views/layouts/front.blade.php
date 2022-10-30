@@ -46,22 +46,22 @@
                                 <div class="navbar-collapse justify-content-md-center collapse" id="navbarsExample10" style="">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link">Возможности</a>
+                                            <a href="/#features" class="nav-link">Возможности</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link">Комплекты умного дома</a>
+                                            <a href="/#packages" class="nav-link">Комплекты умного дома</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link">Выполненные объекты</a>
+                                            <a href="/#portfolio" class="nav-link">Выполненные объекты</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link">Ответы на вопросы</a>
+                                            <a href="/#faq" class="nav-link">Ответы на вопросы</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link">О компании</a>
+                                            <a href="/#map" class="nav-link">О компании</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link">Контакты</a>
+                                            <a href="/#map" class="nav-link">Контакты</a>
                                         </li>
                                     </ul>
                                 </div>

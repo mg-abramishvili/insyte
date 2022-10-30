@@ -94,7 +94,7 @@
         </div>
     </div>
 
-    <div class="main-features p1 bg-l">
+    <div id="features" class="main-features p1 bg-l">
         <div class="container">
             <h5 class="title-head">Возможности</h5>
             <div class="main-features-slider" data-flickity='{ "pageDots": false }'>
@@ -121,7 +121,7 @@
         </div>
     </div>
 
-    <div class="main-packages p1">
+    <div id="packages" class="main-packages p1">
         <div class="container">
             <h5 class="title-head">Комплекты умного дома</h5>
             <div class="row">
@@ -130,7 +130,7 @@
                         <p>MINI</p>
                         <div class="main-packages-item-image" style="background-image: url(/img/package1.jpg);"></div>
                         <span>от 000 руб</span>
-                        <a href="#" class="btn btn-standard">Что входит</a>
+                        <a data-bs-toggle="modal" data-bs-target="#leadModal" class="btn btn-standard">Что входит</a>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
@@ -138,7 +138,7 @@
                         <p>MAX</p>
                         <div class="main-packages-item-image" style="background-image: url(/img/package2.jpg);"></div>
                         <span>от 000 руб</span>
-                        <a href="#" class="btn btn-standard">Что входит</a>
+                        <a data-bs-toggle="modal" data-bs-target="#leadModal" class="btn btn-standard">Что входит</a>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
@@ -146,14 +146,14 @@
                         <p>ProMAX</p>
                         <div class="main-packages-item-image" style="background-image: url(/img/package3.jpg);"></div>
                         <span>от 000 руб</span>
-                        <a href="#" class="btn btn-standard">Что входит</a>
+                        <a data-bs-toggle="modal" data-bs-target="#leadModal" class="btn btn-standard">Что входит</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="main-portfolio p1 bg-l">
+    <div id="portfolio" class="main-portfolio p1 bg-l">
         <div class="container">
             <h5 class="title-head">Выполненные объекты</h5>
             <div class="main-portfolio-item">
@@ -187,7 +187,7 @@
         </div>
     </div>
 
-    <div class="main-map p1">
+    <div id="map" class="main-map p1">
         <div class="container">
             <h5 class="title-head">Посетите наш шоурум</h5>
             <div class="main-map-yandex">
@@ -211,7 +211,7 @@
         </div>
     </div>
 
-    <div class="main-faq p1">
+    <div id="faq" class="main-faq p1">
         <div class="container">
             <h5 class="title-head">Ответы на вопросы</h5>
 

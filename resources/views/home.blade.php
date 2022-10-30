@@ -111,7 +111,7 @@
                                     {!! $feature->description !!}
                                     
                                     <a data-bs-toggle="modal" data-bs-target="#leadModal" class="btn btn-standard me-2">Узнать стоимость</a>
-                                    <a href="#" class="btn btn-outline-standard">Подробнее</a>
+                                    <!-- <a href="#" class="btn btn-outline-standard">Подробнее</a> -->
                                 </div>
                             </div>
                         </div>

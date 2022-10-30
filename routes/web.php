@@ -8,6 +8,10 @@ Route::get('/', function () {
     return view('home', compact('features'));
 });
 
+Route::get('policy', function () {
+    return view('policy');
+});
+
 // ADMIN
 Route::get('admin', function () {
     return view('layouts.admin');

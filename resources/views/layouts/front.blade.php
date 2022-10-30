@@ -78,7 +78,7 @@
             <div class="container">
                 <p>© Все права защищены</p>
                 <p>INSYTE UFA, 2022</p>
-                <a href="#">Политика конфиденциальности</a>
+                <a href="/policy">Политика конфиденциальности</a>
             </div>
         </footer>
     </div>

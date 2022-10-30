@@ -54,6 +54,11 @@ body {
     margin-bottom: 70px;
     text-align: center;
 }
+.page .title-head {
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
 /* HEADER */
 .header-top {

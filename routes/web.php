@@ -2,10 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\Feature;
+use App\Models\Portfolio;
 
 Route::get('/', function () {
     $features = Feature::all();
-    return view('home', compact('features'));
+    $portfolios = Portfolio::all();
+    return view('home', compact('features', 'portfolios'));
 });
 
 Route::get('policy', function () {

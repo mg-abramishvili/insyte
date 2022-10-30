@@ -15,14 +15,14 @@
                         <source src="/img/video1.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                     <h5>Добро пожаловать <br>в Умный Дом!</h5>
                     <!-- <p>Текст первого слайда</p> -->
                 </div>
             </div>
             <div data-bs-interval="5000" class="carousel-item">
                 <div class="carousel-item-image" style="background-image: url(/img/slide02.jpg);"></div>
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                     <h5>Впервые в Уфе!</h5>
                     <p>Профессиональная проводная система домашней автоматизации!</p>
                     <!-- <a href="123" class="btn btn-standard">Подробнее</a> -->
@@ -30,7 +30,7 @@
             </div>
             <div data-bs-interval="5000" class="carousel-item">
                 <div class="carousel-item-image" style="background-image: url(/img/slide03.jpg);"></div>
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                     <h5>Шоурум в Уфе!</h5>
                     <p>Приходите к нам в гости, окунитесь в атмосферу Умного Дома!</p>
                     <!-- <a href="123" class="btn btn-standard">Подробнее</a> -->
@@ -101,10 +101,10 @@
                 @foreach($features as $feature)
                     <div class="main-features-item">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-12 col-md-6">
                                 <img src="{{ $feature->image }}" alt="Управление освещением">
                             </div>
-                            <div class="col-6">
+                            <div class="col-12 col-md-6">
                                 <div class="main-features-item-desc">
                                     <h4>{{ $feature->name }}</h4>
                 
@@ -156,34 +156,35 @@
     <div id="portfolio" class="main-portfolio p1 bg-l">
         <div class="container">
             <h5 class="title-head">Выполненные объекты</h5>
-            <div class="main-portfolio-item">
-                <div class="row">
-                    <div class="col-12 col-lg-5">
-                        <p class="main-portfolio-item-title">
-                            Автоматизация загородного дома (820 кв. м), пос. Жебреи, г. Пермь
-                        </p>
-                        
-                        <p>Основные задачи — локальное и удаленное управление системами доступа, кондиционирования, освещения (в том числе ландшафтным), отопления (в том числе теплыми полами), развлечений, управление кинотеатром и сауной.</p>
-                        
-                        <a data-bs-toggle="modal" data-bs-target="#leadModal" class="btn btn-standard">Хочу так же!</a>
-                    </div>
-                    <div class="col-12 col-lg-7">
-                        <div class="carousel carousel-main" data-flickity='{ "pageDots": false }'>
-                            <div class="carousel-cell" style="background-image: url(/img/portfolio/p01-01.jpg);"></div>
-                            <div class="carousel-cell" style="background-image: url(/img/portfolio/p01-02.jpg);"></div>
-                            <div class="carousel-cell" style="background-image: url(/img/portfolio/p01-03.jpg);"></div>
-                            <div class="carousel-cell" style="background-image: url(/img/portfolio/p01-04.jpg);"></div>
+            
+            @foreach($portfolios as $portfolio)
+                <div class="main-portfolio-item">
+                    <div class="row">
+                        <div class="col-12 col-lg-5 m-order-2">
+                            <p class="main-portfolio-item-title">
+                                {{ $portfolio->name }}
+                            </p>
+                            
+                            {!! $portfolio->description !!}
+                            
+                            <a data-bs-toggle="modal" data-bs-target="#leadModal" class="btn btn-standard">Хочу так же!</a>
                         </div>
-                          
-                        <div class="carousel carousel-nav" data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "prevNextButtons": false, "pageDots": false }'>
-                            <div class="carousel-cell" style="background-image: url(/img/portfolio/p01-01.jpg);"></div>
-                            <div class="carousel-cell" style="background-image: url(/img/portfolio/p01-02.jpg);"></div>
-                            <div class="carousel-cell" style="background-image: url(/img/portfolio/p01-03.jpg);"></div>
-                            <div class="carousel-cell" style="background-image: url(/img/portfolio/p01-04.jpg);"></div>
+                        <div class="col-12 col-lg-7 m-order-1">
+                            <div class="carousel carousel-main{{ $portfolio->id }}" data-flickity='{ "pageDots": false }'>
+                                @foreach($portfolio->gallery as $g)
+                                    <div class="carousel-cell" style="background-image: url({{ $g }});"></div>
+                                @endforeach
+                            </div>
+                            
+                            <div class="carousel carousel-nav" data-flickity='{ "asNavFor": ".carousel-main{{ $portfolio->id }}", "contain": true, "prevNextButtons": false, "pageDots": false }'>
+                                @foreach($portfolio->gallery as $g)    
+                                    <div class="carousel-cell" style="background-image: url({{ $g }});"></div>
+                                @endforeach
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            @endforeach
         </div>
     </div>
 

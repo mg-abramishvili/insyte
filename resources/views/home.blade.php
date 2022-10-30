@@ -110,7 +110,7 @@
                 
                                     {!! $feature->description !!}
                                     
-                                    <a href="#" class="btn btn-standard me-2">Узнать стоимость</a>
+                                    <a data-bs-toggle="modal" data-bs-target="#leadModal" class="btn btn-standard me-2">Узнать стоимость</a>
                                     <a href="#" class="btn btn-outline-standard">Подробнее</a>
                                 </div>
                             </div>
@@ -165,7 +165,7 @@
                         
                         <p>Основные задачи — локальное и удаленное управление системами доступа, кондиционирования, освещения (в том числе ландшафтным), отопления (в том числе теплыми полами), развлечений, управление кинотеатром и сауной.</p>
                         
-                        <a href="#" class="btn btn-standard">Хочу так же!</a>
+                        <a data-bs-toggle="modal" data-bs-target="#leadModal" class="btn btn-standard">Хочу так же!</a>
                     </div>
                     <div class="col-12 col-lg-7">
                         <div class="carousel carousel-main" data-flickity='{ "pageDots": false }'>

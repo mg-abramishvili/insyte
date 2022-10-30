@@ -33,7 +33,7 @@
                             <a href="tel:+79378625353">+7 937 862 53 53</a>
                         </div>
                         <div class="header-button">
-                            <a href="#" class="btn btn-standard">Обратный звонок</a>
+                            <a data-bs-toggle="modal" data-bs-target="#leadModal" class="btn btn-standard">Обратный звонок</a>
                         </div>
                     </div>
                 </div>
@@ -81,6 +81,20 @@
                 <a href="/policy">Политика конфиденциальности</a>
             </div>
         </footer>
+
+        <div class="modal fade" id="leadModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5">Оставить заявку</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <create-lead></create-lead>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="/js/bootstrap.min.js"></script>

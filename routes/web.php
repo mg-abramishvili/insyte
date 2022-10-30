@@ -12,6 +12,8 @@ Route::get('policy', function () {
     return view('policy');
 });
 
+Route::post('_leads', [App\Http\Controllers\LeadController::class, 'store']);
+
 // ADMIN
 Route::get('admin', function () {
     return view('layouts.admin');

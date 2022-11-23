@@ -550,7 +550,7 @@ header {
 .main-map-desc .socials a {
     display: inline-flex;
 }
-.main-map-desc .socials a svg {
+.main-map-desc .socials a img {
     display: block;
     width: 30px;
     height: 30px;

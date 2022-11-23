@@ -529,7 +529,7 @@ header {
     .main-map-desc {
         left: 50px;
         right: auto;
-        padding: 50px;
+        padding: 30px 50px;
     }
 }
 .main-map-desc p:last-of-type {
@@ -549,11 +549,17 @@ header {
 }
 .main-map-desc .socials a {
     display: inline-flex;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: rgba(255,255,255,0.35);
 }
 .main-map-desc .socials a img {
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    height: 100%;
 }
 /* MAP */
 

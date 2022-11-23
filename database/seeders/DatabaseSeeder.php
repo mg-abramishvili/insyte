@@ -12,6 +12,7 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             FeatureSeeder::class,
             PortfolioSeeder::class,
+            PackageSeeder::class,
         ]);
     }
 }

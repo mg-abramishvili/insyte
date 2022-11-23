@@ -13,6 +13,11 @@ body {
     border-radius: 50px;
     border: 2px solid transparent;
 }
+.btn-standard:hover,
+.btn-standard:focus {
+    background-color: #007bd8;
+    color: #fff;
+}
 .btn-outline-standard {
     background-color: #fff;
     color: #333;
@@ -79,6 +84,12 @@ body {
 }
 
 /* HEADER */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
+}
 .header-top {
     padding: 10px 0;
 }
@@ -152,6 +163,7 @@ body {
 @media (min-width: 992px) {
     .header-bottom {
         border-top: 1px solid rgba(0, 98, 175, 0.15);
+        border-bottom: 1px solid rgba(0, 98, 175, 0.15);
     }
 }
 .header-bottom-menu .bg-light {
@@ -163,8 +175,8 @@ body {
 }
 @media (min-width: 992px) {
     .header-bottom-menu .navbar {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 .header-bottom-menu .navbar-nav {
@@ -175,7 +187,7 @@ body {
 .header-bottom-menu .navbar-nav .nav-link {
     color: #151515;
     font-weight: 600;
-    padding: 6px 10px;
+    padding: 10px 10px;
 }
 .header-bottom-menu .navbar-nav .nav-link:hover,
 .header-bottom-menu .navbar-nav .nav-link:focus {
@@ -353,31 +365,32 @@ body {
 }
 @media (min-width: 992px) {
     .main-packages-item {
-        padding: 25px;
+        padding: 15px;
         margin-bottom: 0;
     }
 }
 .main-packages-item p {
-    font-size: 26px;
+    font-size: 18px;
     font-weight: 700;
     color: #0062AF;
     margin-bottom: 15px;
 }
 @media (min-width: 992px) {
     .main-packages-item {
-        font-size: 30px;
+        font-size: 26px;
         margin-bottom: 40px;
     }
 }
 .main-packages-item span {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     display: block;
     font-weight: 700;
     font-size: 16px;
+    color: #0062AF;
 }
 @media (min-width: 992px) {
     .main-packages-item span {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 .main-packages-item .btn-standard {
@@ -385,11 +398,28 @@ body {
     text-align: center;
 }
 .main-packages-item-image {
-    height: 250px;
+    height: 200px;
     background-size: cover;
     background-position: center center;
     margin-bottom: 20px;
     border-radius: 10px;
+}
+.main-packages-item ul {
+    text-align: left;
+    padding-left: 15px;
+    margin: 15px 0;
+}
+.main-packages-item ul li {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+@media (min-width: 992px) {
+    .main-packages-item ul li {
+        font-size: 14px;
+    }
+}
+.main-packages-item ul li:last-child {
+    margin-bottom: 0;
 }
 /* MAIN PACKAGES */
 

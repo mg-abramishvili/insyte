@@ -3,11 +3,14 @@
 use Illuminate\Support\Facades\Route;
 use App\Models\Feature;
 use App\Models\Portfolio;
+use App\Models\Package;
 
 Route::get('/', function () {
     $features = Feature::all();
     $portfolios = Portfolio::all();
-    return view('home', compact('features', 'portfolios'));
+    $packages = Package::all();
+
+    return view('home', compact('features', 'portfolios', 'packages'));
 });
 
 Route::get('policy', function () {

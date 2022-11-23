@@ -12,7 +12,7 @@
                 <!-- <div class="carousel-item-image" style="background-image: url(http://xn--80abehgs9c4c.xn--p1ai/img/slide-1.jpg);"></div> -->
                 <div class="carousel-item-video">
                     <video autoplay nocontrols muted loop>
-                        <source src="/img/video1.mp4" type="video/mp4">
+                        <source src="/img/video.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="carousel-caption">
@@ -123,32 +123,26 @@
 
     <div id="packages" class="main-packages p1">
         <div class="container">
-            <h5 class="title-head">Комплекты умного дома</h5>
+            <h5 class="title-head">Системы автоматизации</h5>
             <div class="row">
-                <div class="col-12 col-lg-4">
-                    <div class="main-packages-item">
-                        <p>MINI</p>
-                        <div class="main-packages-item-image" style="background-image: url(/img/package1.jpg);"></div>
-                        <span>от 000 руб</span>
-                        <a data-bs-toggle="modal" data-bs-target="#leadModal" class="btn btn-standard">Что входит</a>
+                @foreach($packages as $package)
+                    <div class="col-12 col-lg-3">
+                        <div class="main-packages-item">
+                            <p>{{ $package->name }}</p>
+                            <div class="main-packages-item-image" style="background-image: url({{ $package->image }});"></div>
+                            
+                            <span>от {{ $package->price }} руб</span>
+
+                            <a data-bs-toggle="collapse" href="#package{{ $package->id }}" role="button" class="btn btn-outline-standard w-100 mb-2">Что входит</a>
+                            
+                            <div class="collapse" id="package{{ $package->id }}">
+                                {!! $package->description !!}
+                            </div>
+
+                            <a data-bs-toggle="modal" data-bs-target="#leadModal" class="btn btn-standard">Заказать</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="main-packages-item">
-                        <p>MAX</p>
-                        <div class="main-packages-item-image" style="background-image: url(/img/package2.jpg);"></div>
-                        <span>от 000 руб</span>
-                        <a data-bs-toggle="modal" data-bs-target="#leadModal" class="btn btn-standard">Что входит</a>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="main-packages-item">
-                        <p>ProMAX</p>
-                        <div class="main-packages-item-image" style="background-image: url(/img/package3.jpg);"></div>
-                        <span>от 000 руб</span>
-                        <a data-bs-toggle="modal" data-bs-target="#leadModal" class="btn btn-standard">Что входит</a>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>

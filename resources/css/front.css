@@ -544,6 +544,17 @@ header {
     overflow: hidden;
     position: relative;
 }
+.main-map .socials {
+    display: flex;
+}
+.main-map .socials a {
+    display: inline-flex;
+}
+.main-map .socials a svg {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
 /* MAP */
 
 /* MAIN FAQ */

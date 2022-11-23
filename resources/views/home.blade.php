@@ -199,6 +199,17 @@
                         <strong>Телефон:</strong>
                         +7 937 862 53 53
                     </p>
+                    <p class="socials">
+                        <a href="https://wa.me/79378625353">
+                            <img src="/img/whatsapp.svg" alt="">
+                        </a>
+                        <a href="https://t.me/+79378625353">
+                            <img src="/img/telegram.svg" alt="">
+                        </a>
+                        <a href="https://vk.com/insyteufa">
+                            <img src="/img/vk.svg" alt="">
+                        </a>
+                    </p>
                 </div>
                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac258459994acdb7085df506c5af775c9caabf4804417adcb5f4d21c1f57dd3f7&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
                 <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac258459994acdb7085df506c5af775c9caabf4804417adcb5f4d21c1f57dd3f7&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script> -->

@@ -85,10 +85,15 @@ body {
 
 /* HEADER */
 header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background-color: #fff;
+    /**/
+}
+@media (min-width: 992px) {
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: #fff;
+    }
 }
 .header-top {
     padding: 10px 0;
@@ -391,11 +396,18 @@ header {
 @media (min-width: 992px) {
     .main-packages-item span {
         font-size: 20px;
+        margin-bottom: 20px;
     }
 }
 .main-packages-item .btn-standard {
     width: 100%;
     text-align: center;
+}
+.main-packages-item .btn-outline-standard {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    color: #0062AF;
 }
 .main-packages-item-image {
     height: 200px;

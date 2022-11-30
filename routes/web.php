@@ -30,4 +30,8 @@ Route::prefix("admin")->middleware(['auth'])->group(function() {
     })->where('any', '.*');
 });
 
+// ADMIN LEADS
+Route::get('_admin/leads', [App\Http\Controllers\Admin\LeadController::class, 'index'])->middleware(['auth']);
+Route::get('_admin/lead/{id}', [App\Http\Controllers\Admin\LeadController::class, 'lead'])->middleware(['auth']);
+
 require __DIR__.'/auth.php';

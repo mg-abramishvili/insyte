@@ -27,7 +27,7 @@
                 <a href="/policy" target="_blank">(!)</a>
             </label>
         </div>
-        <button @click="save()" class="btn btn-primary">Оформить</button>
+        <button @click="save()" :disabled="!views.saveButton" class="btn btn-primary">Оформить</button>
     </div>
 </template>
 
@@ -38,10 +38,13 @@ export default {
             name: '',
             phone: '',
             policy: false,
+
             errors: [],
+
             views: {
                 success: false,
                 error: false,
+                saveButton: true,
             }
         }
     },
@@ -64,6 +67,8 @@ export default {
                 this.views.error = true
                 return
             }
+
+            this.views.saveButton = false
             
             axios.post('/_leads', {
                 name: this.name,
@@ -78,6 +83,8 @@ export default {
     
                 setTimeout(() => {
                     this.views.success = false
+
+                    this.views.saveButton = true
                 }, 3000)
             })
         }

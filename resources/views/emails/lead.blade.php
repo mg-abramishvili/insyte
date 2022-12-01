@@ -4,6 +4,6 @@
 Имя:<br>{{ $name }}
 <br><br>
 
-Телефон:<br>{{ $tel }}
+Телефон:<br>{{ $phone }}
 
 @endcomponent

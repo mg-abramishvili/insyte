@@ -24,7 +24,7 @@ class LeadMail extends Mailable
             ->markdown('emails.lead')
             ->with([
             'name' => $this->lead->name,
-            'tel' => $this->lead->tel,
+            'phone' => $this->lead->phone,
         ]);
     }
 }

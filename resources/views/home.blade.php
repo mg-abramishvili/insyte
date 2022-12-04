@@ -131,7 +131,7 @@
                             <p>{{ $package->name }}</p>
                             <div class="main-packages-item-image" style="background-image: url({{ $package->image }});"></div>
                             
-                            <span>от {{ $package->price }} руб</span>
+                            <!-- <span>от {{ $package->price }} руб</span> -->
 
                             <a data-bs-toggle="collapse" href="#package{{ $package->id }}" role="button" class="btn btn-outline-standard w-100 mb-2">Что входит</a>
                             

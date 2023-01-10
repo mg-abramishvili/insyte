@@ -27,7 +27,7 @@
                 <a href="/policy" target="_blank">(!)</a>
             </label>
         </div>
-        <button @click="save()" :disabled="!views.saveButton" class="btn btn-primary">Оформить</button>
+        <button @click="save()" :disabled="!views.saveButton" class="btn btn-primary">Оставить заявку</button>
     </div>
 </template>
 

@@ -255,6 +255,10 @@ header {
     padding: 0;
     color: #fff;
     z-index: 2;
+    text-align: left;
+}
+.marquiz__container {
+    text-align: left !important;
 }
 #main-carousel .carousel-caption h5 {
     text-transform: uppercase;
@@ -263,7 +267,7 @@ header {
 }
 @media (min-width: 992px) {
     #main-carousel .carousel-caption h5 {
-        font-size: 50px;
+        font-size: 44px;
     }
 }
 #main-carousel .carousel-caption p {
@@ -273,6 +277,11 @@ header {
     #main-carousel .carousel-caption p {
         font-size: 22px;
     }
+}
+
+#main-carousel .carousel-caption ul {
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 /* CAROUSEL */
 

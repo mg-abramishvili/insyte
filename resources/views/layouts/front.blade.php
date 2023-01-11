@@ -14,6 +14,29 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/flickity.css">
     @vite('resources/css/front.css')
+
+    <!-- Marquiz script start -->
+    <script>
+        (function(w, d, s, o){
+        var j = d.createElement(s); j.async = true; j.src = '//script.marquiz.ru/v2.js';j.onload = function() {
+            if (document.readyState !== 'loading') Marquiz.init(o);
+            else document.addEventListener("DOMContentLoaded", function() {
+            Marquiz.init(o);
+            });
+        };
+        d.head.insertBefore(j, d.head.firstElementChild);
+        })(window, document, 'script', {
+            host: '//quiz.marquiz.ru',
+            region: 'eu',
+            id: '63bd11233f77c2004f77358d',
+            autoOpen: false,
+            autoOpenFreq: 'once',
+            openOnExit: false,
+            disableOnMobile: false
+        }
+        );
+    </script>
+    <!-- Marquiz script end -->
 </head>
 <body>
     <div id="front">
@@ -114,29 +137,6 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/91998274" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
-
-    <!-- Marquiz script start -->
-    <script>
-        (function(w, d, s, o){
-        var j = d.createElement(s); j.async = true; j.src = '//script.marquiz.ru/v2.js';j.onload = function() {
-            if (document.readyState !== 'loading') Marquiz.init(o);
-            else document.addEventListener("DOMContentLoaded", function() {
-            Marquiz.init(o);
-            });
-        };
-        d.head.insertBefore(j, d.head.firstElementChild);
-        })(window, document, 'script', {
-            host: '//quiz.marquiz.ru',
-            region: 'eu',
-            id: '63bd11233f77c2004f77358d',
-            autoOpen: false,
-            autoOpenFreq: 'once',
-            openOnExit: false,
-            disableOnMobile: false
-        }
-        );
-    </script>
-    <!-- Marquiz script end -->
 
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/flickity.pkgd.min.js"></script>

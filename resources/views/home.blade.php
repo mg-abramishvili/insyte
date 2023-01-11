@@ -18,7 +18,8 @@
                 <div class="carousel-caption">
                     <h5>Добро пожаловать <br>в Умный Дом!</h5>
                     <!-- <p>Текст первого слайда</p> -->
-                    <a href="/#popup:marquiz_63bd11233f77c2004f77358d" class="btn btn-standard">Рассчиать стоимость</a>
+                    <!-- <a href="#popup:marquiz_63bd11233f77c2004f77358d" class="btn btn-standard">Рассчитать стоимость</a> -->
+                    <quiz />
                 </div>
             </div>
             <!-- <div data-bs-interval="5000" class="carousel-item">

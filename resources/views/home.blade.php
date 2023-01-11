@@ -3,8 +3,8 @@
     <div id="main-carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="0"  class="active" aria-current="true"  aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="1"  aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="2"  aria-label="Slide 3"></button>
+            <!-- <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="1"  aria-label="Slide 2"></button> -->
+            <!-- <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="2"  aria-label="Slide 3"></button> -->
         </div>
 
         <div class="carousel-inner">
@@ -18,14 +18,14 @@
                 <div class="carousel-caption">
                     <h5>Добро пожаловать <br>в Умный Дом!</h5>
                     <!-- <p>Текст первого слайда</p> -->
+                    <a href="/#popup:marquiz_63bd11233f77c2004f77358d" class="btn btn-standard">Рассчиать стоимость</a>
                 </div>
             </div>
-            <div data-bs-interval="5000" class="carousel-item">
+            <!-- <div data-bs-interval="5000" class="carousel-item">
                 <div class="carousel-item-image" style="background-image: url(/img/slide02.jpg);"></div>
                 <div class="carousel-caption">
                     <h5>Впервые в Уфе!</h5>
                     <p>Профессиональная проводная система домашней автоматизации!</p>
-                    <!-- <a href="123" class="btn btn-standard">Подробнее</a> -->
                 </div>
             </div>
             <div data-bs-interval="5000" class="carousel-item">
@@ -33,9 +33,8 @@
                 <div class="carousel-caption">
                     <h5>Шоурум в Уфе!</h5>
                     <p>Приходите к нам в гости, окунитесь в атмосферу Умного Дома!</p>
-                    <!-- <a href="123" class="btn btn-standard">Подробнее</a> -->
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <button class="carousel-control-prev" type="button" data-bs-target="#main-carousel" data-bs-slide="prev">
